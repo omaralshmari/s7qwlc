@@ -49,39 +49,25 @@ client.on("guildMemberAdd", member => {
                     ava.getBuffer(jimp.MIME_PNG, (err, buf) => {
                         if (err) return console.log(err);
       
-                             
-                        //ur name
-                        ctx.font = '40px Impact';
-                        ctx.fontSize = '48px';
-                        ctx.fillStyle = "#FFFFFF";
-                        ctx.textAlign = "center";
-                        ctx.fillText(member.user.username, 420, 100);
- 
-                         ctx.font = '30px Impact';
-                        ctx.fontSize = '20px';
-                        ctx.fillStyle = "#FFFFFF";
-                        ctx.textAlign = "center";
-                        ctx.fillText(sw[member.guild.id].msk, 410, 170);
- 
- 
-                        //Avatar
-                        let Avatar = Canvas.Image;
+                              //AVATARً
+                              let Avatar = Canvas.Image;
                               let ava = new Avatar;
                               ava.src = buf;
-                              ctx.beginPath();
-                              ctx.arc(115, 100, 90, 0, Math.PI*2);
-                                 ctx.closePath();
-                                 ctx.clip();
-                                 ctx.drawImage(ava, 5, 5, 200, 200);
-                                 channel.sendMessage(`<@${member.user.id}>`)
-        channel.sendFile(canvas.toBuffer())
+                              ctx.drawImage(ava, 152, 27, 95, 95);
+    
+                                                      //name
+                              ctx.font = '20px Arial Bold';
+                              ctx.fontSize = '20px';
+                              ctx.fillStyle = "#FFFFFF";
+                              ctx.textAlign = "center";
+                                                         ctx.fillText(`${member.user.username}`, 200, 154);
                              
                              //server name
                               ctx.font = '20px Arial';
                               ctx.fontSize = '28px';
                               ctx.fillStyle = "#FFFFFF";
                               ctx.textAlign = "center";
-   ctx.fillText(` Welcome TO ATY ${member.guild.name} ` , 200, 190);
+   ctx.fillText(` Welcome TO ATY ${member.guild.name} ` , 140, 228);
    
    
 
