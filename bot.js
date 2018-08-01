@@ -59,11 +59,16 @@ client.on("guildMemberAdd", member => {
                               ctx.drawImage(ava, 33, 26, 95, 95);
     
                                                       //name
-                              ctx.font = '20px Arial Bold';
-                              ctx.fontSize = '20px';
-                              ctx.fillStyle = "#FFFFFF";
-                              ctx.textAlign = "center";
-                              ctx.fillText(`${member.user.username}`, 200, 154);
+                           ctx.font = '40px Impact';
+                        ctx.fontSize = '48px';
+                        ctx.fillStyle = "#FFFFFF";
+                        ctx.textAlign = "center";
+                        ctx.fillText(member.user.username, 420, 100);
+ 
+                         ctx.font = '30px Impact';
+                        ctx.fontSize = '20px';
+                        ctx.fillStyle = "#FFFFFF";
+                        ctx.textAlign = "center";
                              
                              //server name
                               ctx.font = '20px Arial';
