@@ -16,7 +16,7 @@ client.on('message', message => {
 const fs = require('fs');
 client.on("guildMemberAdd", member => {
       
-      const welcomer = member.guild.channels.find("name","s7q"); //اسم روم
+      const welcomer = member.guild.channels.find("name","𝗔𝗧𝗬"); //اسم روم
                 
       var Canvas = require('canvas')
       var jimp = require('jimp')
