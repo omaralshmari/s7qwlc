@@ -21,7 +21,7 @@ client.on("guildMemberAdd", member => {
       var Canvas = require('canvas')
       var jimp = require('jimp')
       
-      const mi = ['./img/w1.jpg','./img/w2.jpg','./img/w3.jpg','./img/w4.jpg','./img/w5.jpg','./img/w6.jpg','./img/w7.jpg','./img/w8.jpg']; //يمكن ضيف '/img/w3.png','/img/w4.png'...
+      const mi = ['./img/w1.jpg','./img/w2.jpg','./img/w3.jpg','./img/w4.jpg','./img/w5.jpg','./img/w6.jpg','./img/w7.jpg','./img/w8.jpg','./img/w9.jpg','./img/w10.jpg','./img/w11.jpg','./img/w12.jpg','./img/w13.jpg','./img/w14.jpg','./img/w15.jpg','./img/w16.jpg','./img/w17.jpg','./img/w18.jpg','./img/w19.jpg','./img/w20.jpg']; //يمكن ضيف '/img/w3.png','/img/w4.png'...
       
      
       
