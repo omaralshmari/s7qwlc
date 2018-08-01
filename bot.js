@@ -21,7 +21,7 @@ client.on("guildMemberAdd", member => {
       var Canvas = require('canvas')
       var jimp = require('jimp')
       
-      const mi = ['./img/w1.jpg','./img/w2.jpg']; //يمكن ضيف '/img/w3.png','/img/w4.png'...
+      const mi = ['./img/w1.png','./img/w2.png']; //يمكن ضيف '/img/w3.png','/img/w4.png'...
       
      
       
@@ -53,7 +53,7 @@ client.on("guildMemberAdd", member => {
                               let Avatar = Canvas.Image;
                               let ava = new Avatar;
                               ava.src = buf;
-                              ctx.drawImage(ava, 300, 750, 340, 405);
+                              ctx.drawImage(ava, 152, 27, 95, 95);
                             //member number..
                         ctx.font = '13px Arial';
                         ctx.fontSize = '20px';
