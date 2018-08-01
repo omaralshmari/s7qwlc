@@ -53,7 +53,7 @@ client.on("guildMemberAdd", member => {
                               let Avatar = Canvas.Image;
                               let ava = new Avatar;
                               ava.src = buf;
-                              ctx.drawImage(ava, 152, 27, 95, 95);
+                              ctx.drawImage(ava, 5, 5, 200, 200);
                             //member number..
                         ctx.font = '13px Arial';
                         ctx.fontSize = '20px';
