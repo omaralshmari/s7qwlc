@@ -73,7 +73,7 @@ client.on("guildMemberAdd", member => {
                               ctx.fontSize = '28px';
                               ctx.fillStyle = "#FFFFFF";
                               ctx.textAlign = "center";
-   ctx.fillText(` Welcome TO  ${member.guild.name} ` , 200, 190);
+   ctx.fillText(` Welcome TO ATY ${member.guild.name} ` , 200, 190);
    
    
 
@@ -116,7 +116,7 @@ client.on('guildMemberRemove', member => {
     .setColor('RED')
     .setFooter(`H Bot`, '')
 
-var channel =member.guild.channels.find('name', 's7q')
+var channel =member.guild.channels.find('name', 'chat')
 if (!channel) return;
 channel.send({embed : embed});
 });
