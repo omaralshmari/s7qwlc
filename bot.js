@@ -67,7 +67,7 @@ client.on("guildMemberAdd", member => {
                               ctx.fillStyle = "#FFFFFF";
                               ctx.textAlign = "center";
                                     ctx.fillText(`انت العضو رقم${member.guild.memberCount} `
-                              , 200, 190);
+                              , 200, 290);
 
    
    
