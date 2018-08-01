@@ -21,7 +21,7 @@ client.on("guildMemberAdd", member => {
       var Canvas = require('canvas')
       var jimp = require('jimp')
       
-      const mi = ['./img/w1.jpg','./img/w2.jpg']; //يمكن ضيف '/img/w3.png','/img/w4.png'...
+      const mi = ['./img/w1.jpg','./img/w2.jpg','./img/w3.jpg','./img/w4.jpg','./img/w5.jpg','./img/w6.jpg','./img/w7.jpg','./img/w8.jpg']; //يمكن ضيف '/img/w3.png','/img/w4.png'...
       
      
       
@@ -53,10 +53,6 @@ client.on("guildMemberAdd", member => {
                               let Avatar = Canvas.Image;
                               let ava = new Avatar;
                               ava.src = buf;
-                              ctx.beginPath();
-                              ctx.arc(115, 100, 90, 0, Math.PI*2);
-                              ctx.closePath();
-                              ctx.clip();
                               ctx.drawImage(ava, 152, 27, 95, 95);
                             //member number..
                         ctx.font = '13px Arial';
@@ -77,7 +73,7 @@ client.on("guildMemberAdd", member => {
                               ctx.fontSize = '28px';
                               ctx.fillStyle = "#FFFFFF";
                               ctx.textAlign = "center";
-   ctx.fillText(` Welcome TO ATY ${member.guild.name} ` , 200, 190);
+   ctx.fillText(` WELCOME TO ATY ${member.guild.name} ` , 200, 190);
    
    
 
